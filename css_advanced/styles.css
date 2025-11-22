@@ -1,6 +1,7 @@
-/* CSS Advanced – SmileSchool
-   Base styles – will be completed in next tasks
-*/
+/* =========================================
+   CSS Advanced – SmileSchool
+   Base styles + Task 2 (Header & Hero)
+   ========================================= */
 
 *,
 *::before,
@@ -8,8 +9,13 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: "Source Sans Pro", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
   color: #121212;
@@ -25,4 +31,174 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+/* ================= HEADER ================= */
+
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.main-nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.logo {
+  height: 32px;
+  width: auto;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* ================= HERO (BANNER) ================= */
+
+.hero {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(7, 22, 41, 0.8) 0%,
+      rgba(7, 22, 41, 0.95) 60%,
+      rgba(7, 22, 41, 1) 100%
+    ),
+    url("images/Object.png");
+  background-size: cover;
+  background-position: center top;
+  color: #ffffff;
+  text-align: center;
+  padding: 160px 16px 120px;
+}
+
+.hero-main {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.hero-tags {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.hero-tags span {
+  text-transform: uppercase;
+}
+
+.btn-cta {
+  margin-top: 32px;
+  padding: 12px 40px;
+  border-radius: 22px;
+  border: none;
+  outline: none;
+  background-color: #c271ff;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Learn from the pros + profiles */
+
+.hero-pros {
+  max-width: 900px;
+  margin: 120px auto 0;
+}
+
+.hero-pros h2 {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0;
+  color: #c271ff;
+}
+
+.hero-pros h2::first-letter {
+  text-transform: uppercase;
+}
+
+.pros-grid {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.pro-card {
+  text-align: center;
+  max-width: 160px;
+}
+
+.pro-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 16px;
+}
+
+.pro-card h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.pro-card p {
+  margin: 0;
+  font-size: 12px;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 140px 24px 80px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero-pros {
+    margin-top: 80px;
+  }
+
+  .pros-grid {
+    gap: 32px;
+  }
 }
