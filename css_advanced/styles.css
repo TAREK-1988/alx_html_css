@@ -1,0 +1,29 @@
+/* CSS Advanced – SmileSchool
+   Base styles – will be completed in next tasks
+*/
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Body defaults */
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+/* Simple reset for lists and links */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
