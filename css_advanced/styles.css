@@ -1,6 +1,6 @@
 /* =========================================
    CSS Advanced – SmileSchool
-   Base styles + Task 2 (Header & Hero)
+   Base styles + Header, Hero, Quote
    ========================================= */
 
 *,
@@ -144,10 +144,6 @@ a {
   color: #c271ff;
 }
 
-.hero-pros h2::first-letter {
-  text-transform: uppercase;
-}
-
 .pros-grid {
   margin-top: 60px;
   display: flex;
@@ -183,6 +179,58 @@ a {
   opacity: 0.8;
 }
 
+/* ================= QUOTE SECTION (TASK 3) ================= */
+
+.quote-section {
+  background-color: #c271ff;
+  color: #ffffff;
+  padding: 80px 16px;
+}
+
+.quote-section > div {
+  /* make sure flex works on direct children wrapper */
+}
+
+.quote-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.quote-image img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.quote-text {
+  max-width: 600px;
+  text-align: left;
+}
+
+.quote-text blockquote {
+  margin: 0 0 24px;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.quote-text h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.quote-text p {
+  margin: 0;
+  font-size: 14px;
+  font-style: italic;
+  opacity: 0.8;
+}
+
 /* ================= RESPONSIVE ================= */
 
 @media (max-width: 768px) {
@@ -200,5 +248,14 @@ a {
 
   .pros-grid {
     gap: 32px;
+  }
+
+  .quote-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .quote-text {
+    text-align: center;
   }
 }
