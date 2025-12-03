@@ -21,7 +21,8 @@
   --container-padding-x: 1.5rem;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -48,13 +49,13 @@ body {
   color: var(--color-text);
   background-image:
     linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(2, 8, 20, 0.95)),
-    url("images/headphones_hero.jpg");
+    url("images/headphones_hero_1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-/* Extra overlay layer (if you want more control later) */
+/* Extra overlay layer to control padding and layout */
 .hero__overlay {
   width: 100%;
   height: 100%;
@@ -78,7 +79,7 @@ body {
   justify-content: space-between;
 }
 
-/* Logo */
+/* Logo area */
 .logo {
   display: inline-flex;
   align-items: center;
@@ -98,9 +99,9 @@ body {
   font-size: 0.9rem;
 }
 
-/* Desktop nav */
+/* Desktop navigation (hidden on mobile first) */
 .nav {
-  display: none; /* mobile first: hidden on small screens */
+  display: none;
 }
 
 .nav__list {
@@ -117,12 +118,13 @@ body {
   transition: color 0.2s ease-in-out;
 }
 
+/* Links hover/active color requirement */
 .nav__link:hover,
 .nav__link:active {
   color: var(--color-primary);
 }
 
-/* Mobile hamburger (static for now) */
+/* Mobile hamburger (visual only for this task) */
 .nav-toggle {
   position: relative;
   width: 32px;
@@ -139,7 +141,7 @@ body {
   height: 100%;
 }
 
-/* draw three lines + circle using pseudo elements */
+/* Draw two horizontal lines */
 .nav-toggle__icon::before,
 .nav-toggle__icon::after {
   content: "";
@@ -159,8 +161,8 @@ body {
   top: 18px;
 }
 
+/* Circular outline around the hamburger */
 .nav-toggle::before {
-  /* circle outline behind lines */
   content: "";
   position: absolute;
   inset: 0;
@@ -191,7 +193,7 @@ body {
   color: var(--color-text-muted);
 }
 
-/* CTA button */
+/* Generic button style */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -206,14 +208,16 @@ body {
   transition: opacity 0.2s ease-in-out, transform 0.1s ease-in-out;
 }
 
+/* Primary CTA button */
 .btn--primary {
   background-color: var(--color-primary);
   color: #ffffff;
 }
 
+/* Button hover/active requirement: opacity 0.9 */
 .btn--primary:hover,
 .btn--primary:active {
-  opacity: 0.9; /* as required */
+  opacity: 0.9;
   transform: translateY(1px);
 }
 
@@ -226,10 +230,9 @@ body {
 
 /* =========================
    RESPONSIVE STYLES
-   Mobile-first → enhance for larger screens
    ========================= */
 
-/* ≥ 481px (tablet/desktop) */
+/* Tablet and desktop (width >= 481px) */
 @media (min-width: 481px) {
   .hero__overlay {
     padding-top: 2.5rem;
@@ -255,13 +258,9 @@ body {
     max-width: 75%;
   }
 
-  /* show desktop nav, hide hamburger */
+  /* Show desktop nav and hide mobile hamburger */
   .nav {
     display: block;
   }
 
-  .nav-toggle {
-    display: none;
-  }
-}
-
+  .nav-tog
