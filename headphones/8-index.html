@@ -1,1 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Headphones</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="8-styles.css" />
+    <link rel="stylesheet" href="icons/holberton_school-icon.css" />
+  </head>
+  <body>
+    <!-- HERO / HEADER -->
+    <header class="hero">
+      <div class="container hero-container">
+        <nav class="nav">
+          <a href="#" class="logo">
+            <span class="holberton_school-icon-ic_headphones logo-icon"></span>
+            <span class="logo-text">HEADPHONES</span>
+          </a>
+
+          <!-- Hamburger button (JS) -->
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+          </button>
+
+          <ul class="nav-menu">
+            <li><a href="#what-we-do">what we do</a></li>
+            <li><a href="#our-results">our results</a></li>
+            <li><a href="#contact">contact us</a></li>
+          </ul>
+        </nav>
+
+        <div class="hero-content">
+          <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+          <h2>Lorem ipsum dolor set amet lorem ipsum dolor set</h2>
+
+          <a href="#" class="btn btn-primary hero-btn">CALL TO ACTION</a>
+
+          <p class="hero-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- WHAT WE DO SECTION -->
+      <section id="what-we-do" class="section what-we-do">
+        <div class="container">
+          <h2 class="section-title">What we do...</h2>
+          <p class="section-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+
+          <div class="features">
+            <article class="feature">
+              <span
+                class="holberton_school-icon-ic_sound feature-icon"
+                aria-hidden="true"
+              ></span>
+              <h3 class="feature-title">Lorem ipsum</h3>
+              <p class="feature-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </article>
+
+            <article class="feature">
+              <span
+                class="holberton_school-icon-ic_video feature-icon"
+                aria-hidden="true"
+              ></span>
+              <h3 class="feature-title">Lorem ipsum</h3>
+              <p class="feature-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </article>
+
+            <article class="feature">
+              <span
+                class="holberton_school-icon-ic_music feature-icon"
+                aria-hidden="true"
+              ></span>
+              <h3 class="feature-title">Lorem ipsum</h3>
+              <p class="feature-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </article>
+
+            <article class="feature">
+              <span
+                class="holberton_school-icon-ic_hearing feature-icon"
+                aria-hidden="true"
+              ></span>
+              <h3 class="feature-title">Lorem ipsum</h3>
+              <p class="feature-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUR RESULTS SECTION -->
+      <section id="our-results" class="section our-results">
+        <div class="our-results-overlay">
+          <div class="container our-results-container">
+            <h2 class="section-title section-title-light">
+              Our results speak for themselves
+            </h2>
+            <p class="section-text section-text-light">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+
+            <div class="stats">
+              <div class="stat">
+                <div class="hex">
+                  <p class="hex-value">+2%</p>
+                  <p class="hex-label">Lorem ipsum dolor</p>
+                </div>
+              </div>
+
+              <div class="stat">
+                <div class="hex">
+                  <p class="hex-value">+2%</p>
+                  <p class="hex-label">Lorem ipsum dolor</p>
+                </div>
+              </div>
+
+              <div class="stat">
+                <div class="hex">
+                  <p class="hex-value">+2%</p>
+                  <p class="hex-label">Lorem ipsum dolor</p>
+                </div>
+              </div>
+
+              <div class="stat">
+                <div class="hex">
+                  <p class="hex-value">+2%</p>
+                  <p class="hex-label">Lorem ipsum dolor</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT US SECTION -->
+      <section id="contact" class="section contact">
+        <div class="container contact-container">
+          <h2 class="section-title contact-title">Contact us</h2>
+
+          <form class="contact-form" action="#" method="post" novalidate>
+            <div class="form-group">
+              <label for="contact-name">Name</label>
+              <input type="text" id="contact-name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Your message</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                rows="3"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary contact-btn">
+              CALL TO ACTION
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-left">
+          <span class="holberton_school-icon-ic_headphones logo-icon"></span>
+          <span class="logo-text">HEADPHONES</span>
+        </div>
+
+        <div class="footer-right">
+          <a href="#" aria-label="Facebook" class="footer-social">
+            <span class="holberton_school-icon-ic_facebook"></span>
+          </a>
+          <a href="#" aria-label="Twitter" class="footer-social">
+            <span class="holberton_school-icon-ic_twitter"></span>
+          </a>
+          <a href="#" aria-label="Instagram" class="footer-social">
+            <span class="holberton_school-icon-ic_instagram"></span>
+          </a>
+        </div>
+      </div>
+
+      <p class="footer-copy">&copy;headphones 2020</p>
+    </footer>
+
+    <script src="8-script.js"></script>
+  </body>
+</html>
 
